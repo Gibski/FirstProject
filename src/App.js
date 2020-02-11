@@ -1,11 +1,41 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1
+};
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div >
+      
+      <Slider {...settings}>
+        <div>
+          <h3>1</h3>
+        </div>
+        <div>
+          <h3>2</h3>
+        </div>
+        <div>
+          <h3>3</h3>
+        </div>
+        <div>
+          <h3>4</h3>
+        </div>
+        <div>
+          <h3>5</h3>
+        </div>
+        <div>
+          <h3>6</h3>
+        </div>
+      </Slider>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.dtsfhhdgjk
@@ -18,7 +48,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+   
     </div>
   );
 }
